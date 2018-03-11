@@ -26,6 +26,8 @@ installPackage tree
 installPackage lm-sensors
 installPackage build-essential
 installPackage tar
+installPackage net-tools
+
 
 
 . $DIR/scripts/arc-theme.sh
