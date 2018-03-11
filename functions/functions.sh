@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIR="$(dirname "$0")"
+if [[ ! -d "$DIR" ]]; then DIR="$(dirname "$(pwd)")"; fi
 . $DIR/functions/variables.sh
 
 # Check if user is root
@@ -28,3 +28,5 @@ function installNpm {
 		echo -e "${GREEN}$1 already installed${NC}"
 	fi
 }
+
+isRoot

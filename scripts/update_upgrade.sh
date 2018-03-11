@@ -1,5 +1,6 @@
 #!/bin/bash
 
+if [[ ! -d "$DIR" ]]; then DIR="$(dirname "$(pwd)")"; fi
 . $DIR/functions/variables.sh
 
 # Update all packages and install updates

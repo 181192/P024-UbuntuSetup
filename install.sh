@@ -9,8 +9,6 @@ DIR="$(dirname "$0")"
 . $DIR/functions/variables.sh
 . $DIR/functions/functions.sh
 
-isRoot
-
 # Grab some command line basics
 installPackage wget
 installPackage rsync
