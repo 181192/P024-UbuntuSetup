@@ -1,0 +1,7 @@
+GREEN='\033[0;32m'
+RED='\033[0;31m'
+CYAN='\033[0;36m'
+YELLOW='\033[1;33m'
+PURPLE='\033[1;35m'
+LBLUE='\033[1;34m'
+NC='\033[0m' # No Color
