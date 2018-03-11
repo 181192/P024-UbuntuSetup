@@ -22,6 +22,10 @@ installPackage make
 installPackage npm
 installPackage ufw
 installPackage unrar
+installPackage tree
+installPackage lm-sensors
+installPackage build-essential
+installPackage tar
 
 
 . $DIR/scripts/arc-theme.sh
