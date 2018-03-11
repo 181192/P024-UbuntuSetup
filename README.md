@@ -10,6 +10,41 @@ You can run the script multiple times, and if everything is installed you should
 <img src="https://github.com/181192/P024-UbuntuSetup/blob/master/img/install.png" width="450" height="auto">
 
 
+## Overview of files
+You can choose to run the `install.sh` script or, if you want to install a spesial script you can go in the `scripts` directory. From here you can choose whatever script you want and run normaly with `sudo script.sh`.
+
+
+```
+.
+├── functions
+│   ├── functions.sh
+│   └── variables.sh
+├── install.sh
+├── README.md
+└── scripts
+    ├── arc-theme.sh
+    ├── deluge.sh
+    ├── docker-compose.sh
+    ├── docker-machine.sh
+    ├── docker.sh
+    ├── gimp.sh
+    ├── glances.sh
+    ├── gnome.sh
+    ├── google-chrome.sh
+    ├── java.sh
+    ├── jetbrains-toolbox.sh
+    ├── mongodb.sh
+    ├── nginx.sh
+    ├── nodejs.sh
+    ├── node_modules.sh
+    ├── openvpn.sh
+    ├── sublime.sh
+    ├── update_upgrade.sh
+    ├── virtualbox.sh
+    └── vlc.sh
+ ```
+
+
 List of packages:
 ```
 - autoconf
@@ -66,3 +101,4 @@ A gnome theme:
 ```
 - arc-theme
 ```
+
