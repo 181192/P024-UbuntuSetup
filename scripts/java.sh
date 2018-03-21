@@ -7,6 +7,9 @@ if [[ ! -d "$DIR" ]]; then DIR="$(dirname "$(pwd)")"; fi
 installPackage openjdk-9-jre-headless
 java --version >> /dev/null
 if [ $? -eq 0 ]; then
-	echo 'JAVA_HOME="/usr/lib/jvm/java-9-openjdk-amd64/bin/java"' >> /etc/environment
-	source /etc/environment
+	# Java paths, will be added to the end of file
+	# TODO must check if the paths already exists
+	echo "export JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64" >> ~/.bashrc         
+	echo "export PATH=${PATH}:$JAVA_HOME/bin" >> ~/.bashrc
+	source ~/.bashrc
 fi
