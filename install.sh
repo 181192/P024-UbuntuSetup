@@ -10,26 +10,10 @@ DIR="$(dirname "$0")"
 . $DIR/functions/functions.sh
 
 # Grab some command line basics
-installPackage wget
-installPackage rsync
-installPackage git
-installPackage nano
-installPackage gcc
-installPackage automake
-installPackage autoconf
-installPackage libtool
-installPackage make
-installPackage npm
-installPackage ufw
-installPackage unrar
-installPackage tree
-installPackage lm-sensors
-installPackage build-essential
-installPackage tar
-installPackage net-tools
+. $DIR/scripts/the_basics.sh
 
 
-
+# Installing programs
 . $DIR/scripts/arc-theme.sh
 . $DIR/scripts/deluge.sh
 . $DIR/scripts/docker.sh
@@ -48,6 +32,8 @@ installPackage net-tools
 . $DIR/scripts/sublime.sh
 . $DIR/scripts/virtualbox.sh
 . $DIR/scripts/vlc.sh
+. $DIR/scripts/python2.sh
+. $DIR/scripts/python3.sh
 
 # Install some npm packages
 . $DIR/scripts/node_modules.sh
