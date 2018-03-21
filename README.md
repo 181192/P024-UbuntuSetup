@@ -11,7 +11,7 @@ You can run the script multiple times, and if everything is installed you should
 
 
 ## Overview of files
-You can choose to run the `install.sh` script or, if you want to install a spesial script you can go in the `scripts` directory. From here you can choose whatever script you want and run normaly with `sudo script.sh`.
+You can choose to run the `install.sh` script or, if you want to install a spesial script you can go in the `scripts` directory. From here you can choose whatever script you want and run normaly with `sudo ./script_name.sh`.
 
 
 ```
@@ -38,60 +38,24 @@ You can choose to run the `install.sh` script or, if you want to install a spesi
     ├── nodejs.sh
     ├── node_modules.sh
     ├── openvpn.sh
+    ├── python2.sh
+    ├── python3.sh
     ├── sublime.sh
+    ├── the_basics.sh
     ├── update_upgrade.sh
     ├── virtualbox.sh
     └── vlc.sh
  ```
 
 
-List of packages:
-```
-- autoconf
-- automake
-- browser-plugin-vlc
-- ca-certificates
-- deluge
-- docker
-- docker-compose
-- docker-machine
-- gcc
-- gimp
-- git
-- glances
-- gnome-control-center
-- gnome-online-accounts
-- gnome-tweak-tool
-- google-chrome
-- jetbrains-toolbox
-- libgtk-3-dev
-- libtool
-- make
-- mongodb
-- mongodb-server
-- nano
-- nginx
-- nodejs
-- npm
-- openjdk-9-jre-headless
-- openvpn
-- rsync
-- sublime-text
-- ufw
-- unrar
-- unzip
-- virtualbox
-- virtualbox-ext-pack
-- vlc
-- wget
-```
-
 Some npm packages:
 ```
 - angular
 - @angular/cli
 - browserify
+- cordova
 - express
+- ionic
 - react
 - uglify-js
 - webpack
