@@ -5,6 +5,8 @@ if [[ ! -d "$DIR" ]]; then DIR="$(dirname "$(pwd)")"; fi
 
 # Install OpenVPN with NordVPN configs
 installPackage openvpn
+installPackage network-manager-openvpn 
+installPackage network-manager-openvpn-gnome
 installPackage ca-certificates
 installPackage unzip
 
@@ -17,3 +19,5 @@ if [ ! -d /etc/openvpn/ovpn_tcp ] || [ ! -d /etc/openvpn/ovpn_udp ]; then
 	unzip /etc/openvpn/ovpn.zip && \
 	rm /etc/openvpn/ovpn.zip
 fi
+
+sudo /etc/init.d/networking restart
